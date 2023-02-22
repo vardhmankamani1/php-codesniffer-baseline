@@ -32,6 +32,7 @@ class BaselineSetFactory
 
             if (isset($node['sniff']) === false) {
                 throw new RuntimeException('Missing `sniff` attribute in `violation` in ' . $fileName);
+                echo "sdvjkdfv";
             }
 
             if (isset($node['file']) === false) {
