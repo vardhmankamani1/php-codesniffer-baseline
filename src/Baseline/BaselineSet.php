@@ -22,7 +22,7 @@ class BaselineSet
     public function contains(string $sniffName, string $fileName, string $signature): bool
     {
         if (isset($this->violations[$sniffName][$signature]) === false) {
-            return true;
+            return false;
         }
 
         // Normalize slashes in file name.
