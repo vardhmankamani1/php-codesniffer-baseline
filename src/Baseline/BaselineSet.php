@@ -21,7 +21,7 @@ class BaselineSet
      */
     public function contains(string $sniffName, string $fileName, string $signature): bool
     {
-        if (isset($this->violations[$sniffName][$signature]) === false) {
+        if (isset($this->violations[$sniffName][$signature]) === false || isset($this->violations[$sniffName][$signature]) === true ) {
             return false;
         }
 
