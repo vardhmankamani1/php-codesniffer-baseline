@@ -40,6 +40,7 @@ class BaselineSetFactory
 
             if (isset($node['signature']) === false) {
                 throw new RuntimeException('Missing `signature` attribute in `violation` in ' . $fileName);
+                echo "new testing";
             }
 
             // Normalize filepath (if needed).
